@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  metadataBase: new URL('https://elypxse.com'), // Replace with your actual domain once deployed
+  metadataBase: new URL('https://elypxse.space'), // Replace with your actual domain once deployed
   title: {
     default: "ELYPXSE DEVELOPMENTS | Stealth Mode",
     template: "%s | ELYPXSE"
@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "ELYPXSE DEVELOPMENTS",
     description: "Redefining digital experiences. Elypxse Developments is currently operating in stealth mode. Stay tuned for the unveiling.",
-    url: "https://elypxse.com",
+    url: "https://elypxse.space",
     siteName: "ELYPXSE",
     images: [
       {
