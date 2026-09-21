@@ -35,13 +35,13 @@ export default function Cursor() {
 
       // Handle hover states on links and specific elements
       const handleMouseOver = (e) => {
-        if (e.target.closest('a, .status, .logo')) {
+        if (e.target.closest('a, button, .status, .logo')) {
           cursor.classList.add('hovered');
         }
       };
       
       const handleMouseOut = (e) => {
-        if (e.target.closest('a, .status, .logo')) {
+        if (e.target.closest('a, button, .status, .logo')) {
           cursor.classList.remove('hovered');
         }
       };

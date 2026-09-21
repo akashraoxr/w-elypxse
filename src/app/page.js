@@ -5,6 +5,7 @@ import Cursor from '@/components/Cursor';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import SocialWidget from '@/components/SocialWidget';
+import AudioController from '@/components/AudioController';
 
 export default function Home() {
   useEffect(() => {
@@ -13,7 +14,7 @@ export default function Home() {
       document.body.classList.add('is-glitching');
       setTimeout(() => {
         document.body.classList.remove('is-glitching');
-      }, 300);
+      }, 400);
     }
 
     let timeoutId;
@@ -37,6 +38,7 @@ export default function Home() {
       <Background />
       <Cursor />
       <SocialWidget />
+      <AudioController />
       <Navigation />
       <Hero />
     </>

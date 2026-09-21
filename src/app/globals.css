@@ -183,14 +183,18 @@ body {
 
 html { background-color: #000; }
 body.is-glitching {
-    animation: manual-glitch 0.3s cubic-bezier(.25, .46, .45, .94) forwards;
+    animation: manual-glitch 0.4s cubic-bezier(.25, .46, .45, .94) forwards;
 }
 
 @keyframes manual-glitch {
-    0% { transform: translate(-10px, 4px) scale(1.02); filter: contrast(150%) brightness(150%) hue-rotate(45deg); clip-path: inset(15% 0 55% 0); text-shadow: 5px 0 0 cyan, -5px 0 0 magenta; }
-    25% { transform: translate(10px, -4px) scale(1.01); filter: contrast(200%) brightness(80%) invert(15%); clip-path: inset(75% 0 5% 0); text-shadow: -5px 0 0 cyan, 5px 0 0 magenta; }
-    50% { transform: translate(-6px, 10px) skewX(3deg); filter: contrast(150%) brightness(120%) hue-rotate(-45deg); clip-path: inset(35% 0 45% 0); text-shadow: 5px 0 0 cyan, -5px 0 0 magenta; }
-    75% { transform: translate(6px, -10px) skewX(-3deg); filter: none; clip-path: inset(15% 0 25% 0); text-shadow: -5px 0 0 cyan, 5px 0 0 magenta; }
+    0% { transform: translate(-30px, 15px) scale(1.05) skewX(10deg); filter: contrast(200%) brightness(180%) hue-rotate(90deg) invert(20%); clip-path: inset(15% 0 55% 0); text-shadow: 15px 0 0 cyan, -15px 0 0 magenta; }
+    15% { transform: translate(25px, -20px) scale(0.98) skewX(-15deg); filter: contrast(300%) brightness(50%) invert(80%); clip-path: inset(75% 0 5% 0); text-shadow: -20px 0 0 red, 20px 0 0 blue; }
+    30% { transform: translate(-20px, 20px) scale(1.02) skewX(5deg); filter: contrast(150%) brightness(150%) hue-rotate(-90deg); clip-path: inset(35% 0 45% 0); text-shadow: 10px 0 0 lime, -10px 0 0 red; }
+    45% { transform: translate(30px, -15px) scale(1.08) skewX(-20deg); filter: contrast(250%) brightness(200%) sepia(50%); clip-path: inset(10% 0 80% 0); text-shadow: -15px 0 0 cyan, 15px 0 0 magenta; }
+    60% { transform: translate(-10px, 30px) scale(0.95) skewY(10deg); filter: contrast(100%) brightness(80%) invert(40%); clip-path: inset(80% 0 10% 0); text-shadow: 20px 5px 0 cyan, -20px -5px 0 magenta; }
+    75% { transform: translate(15px, -25px) scale(1.03) skewX(15deg); filter: contrast(200%) brightness(120%) hue-rotate(45deg); clip-path: inset(5% 0 70% 0); text-shadow: -10px -10px 0 yellow, 10px 10px 0 blue; }
+    85% { transform: translate(-25px, 10px) scale(1.06) skewY(-5deg); filter: contrast(150%) brightness(160%) invert(10%); clip-path: inset(45% 0 35% 0); text-shadow: 15px 0 0 cyan, -15px 0 0 magenta; }
+    95% { transform: translate(10px, -5px) scale(1.01) skewX(-2deg); filter: none; clip-path: inset(15% 0 25% 0); text-shadow: -5px 0 0 cyan, 5px 0 0 magenta; }
     100% { transform: translate(0); filter: none; clip-path: inset(0 0 0 0); text-shadow: none; }
 }
 
